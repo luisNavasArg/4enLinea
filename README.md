@@ -5,19 +5,19 @@ a continuación los pasos a seguir:
 1. Tener el archivo phaser.min.js lo puedes descargar en el siguiente link https://phaser.io/download/stable
 2. Crear los archivos html, css y javascript.js
 3. Dentro de tu archivo javascript.js va a ir lo siguiente:
-a).- //Inicializo el juego declarando la variable y la instanciamos
+4. a).- //Inicializo el juego declarando la variable y la instanciamos
 //los parametros son (ancho, alto, etiqueta canvas, ,objeto anonimo {propiedades con sus valores}
 var juego = new Phaser.Game(724, 700, Phaser.CANVAS, '',{ preload: preload, create: create, update: update });
-b).-//declaramos variables y constantes globales
+4.b).-//declaramos variables y constantes globales
 let pelotas, barras;
 const GRAVEDAD = 600;
-c).-//declaro la función de la primera propiedad y cargo los recursos a utilizar
+4.c).-//declaro la función de la primera propiedad y cargo los recursos a utilizar
 function preload(){
 //cargamos el sprite(nombreDelRecurso,rutaDelSprite,ancho, alto)
  juego.load.spritesheet('pelota','imagenes/pelotas.png',100,100);
  juego.load.image('fondoPelota', 'imagenes/fondoPelotas.png');
 }
-d).-//declaramos la función que añade los recursos a nuestro juego
+4.d).-//declaramos la función que añade los recursos a nuestro juego
 function create(){
   //Inicia la física al juego
   juego.physics.startSystem(Phaser.Physics.ARCADE);
@@ -38,7 +38,7 @@ function create(){
   //agregamos al juego entrada del mouse
   juego.inputEnabled = true;
 }
-e).-//creamos la función que se ejecuta constantemente para verificar la colision entre las pelotas
+4.e).-//creamos la función que se ejecuta constantemente para verificar la colision entre las pelotas
 function update(){
   //parametros (objeto a,objeto b, llamado a una función 
   juego.physics.arcade.collide(pelotas, pelotas,fijo);
