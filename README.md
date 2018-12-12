@@ -1,5 +1,5 @@
 # 4enLinea
-4 en linea con javascript y phaser
+<b>4 en linea con javascript y phaser</b>
 Phaser es una herramienta(framework, librearía o motor de juego), para facilitar el desarrollo de videoJuegos con html, css y javascript
 a continuación los pasos a seguir:
 1. Tener el archivo phaser.min.js lo puedes descargar en el siguiente link https://phaser.io/download/stable
